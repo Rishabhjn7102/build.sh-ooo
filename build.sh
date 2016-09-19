@@ -16,3 +16,4 @@ pip install --no-index --find-links file://path/to/tar -xf pycosat-0.6.1.tar.gz
 # Edit conda/utils.py:80, return None form "gnu_get_libc_version()"
 # Fix os.link problem (like https://github.com/termux/termux-packages/issues/29)
 # Change conda/install.py:162, substitute: os.link(src, dst) with shutil.copy(src, dst)
+conda install astropy --copy --no-deps
