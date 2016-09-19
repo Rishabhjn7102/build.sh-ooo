@@ -13,5 +13,5 @@ tar -xf pycosat-0.6.1.tar.gz
 tar -czvf pycosat-0.6.1.tar.gz tar -xf pycosat-0.6.1.tar.gz
 pip install --no-index --find-links file://path/to/tar -xf pycosat-0.6.1.tar.gz
 
-# Edit conda/utils.py:80, return None form "get_gnu_libc_version()"
+# Edit conda/utils.py:80, return None form "gnu_get_libc_version()"
 # TODO fix os.link problem (like https://github.com/termux/termux-packages/issues/29)
