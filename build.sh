@@ -10,6 +10,6 @@ wget https://pypi.python.org/packages/76/0f/16edae7bc75b79376f2c260b7a459829785f
 tar -xf pycosat-0.6.1.tar.gz
 # edit pycosat-0.6.1/picosat.c
 # change "#include <sys/unistd.h>" to "#include <unistd.h>"
-tar -cf pycosat-0.6.1.tar.gz tar -xf pycosat-0.6.1.tar.gz
+tar -czvf pycosat-0.6.1.tar.gz tar -xf pycosat-0.6.1.tar.gz
 
 pip install --no-index --find-links file://path/to/tar -xf pycosat-0.6.1.tar.gz
