@@ -22,4 +22,12 @@ pip install --no-index --find-links file://path/to/tar -xf pycosat-0.6.1.tar.gz
 # Install numpy
 LDFLAGS="-lm -lcompiler_rt" pip install numpy
 
+# Won't work, pre-compiled binary is not compatible with aarch64
 conda install astropy --copy --no-deps
+
+# Note:
+# if you want to use astropy
+apt update && apt upgrade
+apt install python python-dev pip clang
+LDFLAGS="-lm -lcompiler_rt" pip install numpy
+pip install astropy
