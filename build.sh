@@ -1,5 +1,5 @@
 apt update && apt upgrade
-apt install python python-dev pip
+apt install python python-dev pip clang
 pip install --upgrade pip
 pip install conda
 ## All the following packages are needed by conda
