@@ -20,7 +20,6 @@ pip install --no-index --find-links file://path/to/tar -xf pycosat-0.6.1.tar.gz
 # or pass option "--copy" in order to avoid the usage of os.link
 
 # Install numpy
-LDFLAGS=" -lm -lcompiler_rt" pip install numpy
-
+LDFLAGS="-lm -lcompiler_rt" pip install numpy
 
 conda install astropy --copy --no-deps
